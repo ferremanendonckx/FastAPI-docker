@@ -2,7 +2,7 @@
 FROM python:3.10.0-alpine
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /FastAPI
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
